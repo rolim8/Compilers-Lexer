@@ -1,4 +1,6 @@
 from lx import lexer
+from ply import yacc
+
 
 data = '''
  int _ab + - * / 9;
@@ -14,3 +16,15 @@ while True:
     if not tok:
         break  # No more input
     print(tok)
+
+#-------------------------------------#
+parser = yacc.yacc()
+
+while True:
+    try:
+        s = input('calc > ')
+    except EOFError:
+        break
+    if not s: continue
+    result = parser.parse(s)
+    print(result)
