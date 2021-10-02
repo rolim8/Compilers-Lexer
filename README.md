@@ -6,5 +6,5 @@ Implemente o LEXER de exemplo e inclua as seguintes regras:
 * inclua regras para atribuição e final de linha (;)
 
 #------------------------------------------------------#
-PLY_PARSER:
+<br>PLY_PARSER:
 * Implementar as operações que faltam (divisão)
